@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click tab eq() ex</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <style>
+    * {margin: 0; padding: 0; list-style: none;}
+    body{width: 100%; height: 100%; background-color: lightblue; overflow: hidden;}
+    header div{position: absolute; right: 0px; top:10px; width: 25px; height: 50px;}
+    header div span{flex: 1; display: flex; justify-content: center;  width: 40px; height: 5px; background-color: yellow; margin-bottom: 5px;}
+    header div:hover span{background-color: hotpink;}
+    header nav{right: 0px; top: 50px; position: absolute; width: 100px; height: 100%; overflow: hidden;}
+    header nav ul{background-color: black ; width: 110px; height: 100%; opacity: 0.8; right: 0; position: absolute;}
+    header nav li{display: flex; flex: 1; justify-content: center; line-height: 30px; font-size: 20px; background-color: white; width: 100px; height: 50px;}
+    header nav li a{text-decoration: none; color: red;}
+    header nav li a:hover{color: greenyellow;}
+
+    /* header div span.active{}
+    header nav li.active{} */
+
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('header div').click(function(){
+                $('header nav').toggle();
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Menu1</a></li>
+                <li><a href="#">Menu2</a></li>
+                <li><a href="#">Menu3</a></li>
+                <li><a href="#">Menu4</a></li>
+                <li><a href="#">Menu5</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
