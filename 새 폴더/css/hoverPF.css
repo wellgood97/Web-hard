@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{width: 100%; height: 100vh; background: skyblue; display: flex; justify-content: center; align-items: center;}
+
+.sweet{display: flex !important; align-items: center; justify-content: center; list-style: none; font-size: 200px; font-family: 'Nanum Pen Script', cursive; color: white;}
+.sweet li{height: 100%; position: absolute; display: flex !important; position: relative; z-index: 100; display: inline-block;}
+.sweet li{text-shadow: 1px 1px 0 #e1e1e1,2px 2px 0 #e1e1e1,3px 3px 0 #e1e1e1,4px 4px 0 #e1e1e1,5px 5px 0 #e1e1e1,25px 35px 0px rgba(0,0,0,0.1);}

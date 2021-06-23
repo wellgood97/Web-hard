@@ -1,0 +1,7 @@
+﻿  count.cpp
+C:\Users\82104\Desktop\Project1\Project1\count.cpp(1,1): error C2019: 전처리기 지시문이 있어야 하는데 '#'이(가) 있습니다.
+C:\Users\82104\Desktop\Project1\Project1\count.cpp(8,1): error C2059: 구문 오류: 'public'
+C:\Users\82104\Desktop\Project1\Project1\count.cpp(8,32): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\82104\Desktop\Project1\Project1\count.cpp(8,32): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Users\82104\Desktop\Project1\Project1\count.cpp(31,1): error C2059: 구문 오류: '}'
+C:\Users\82104\Desktop\Project1\Project1\count.cpp(31,1): error C2143: 구문 오류: ';'이(가) '}' 앞에 없습니다.

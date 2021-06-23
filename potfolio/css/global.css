@@ -1,0 +1,20 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{height: 100%; width: 100%; background-image: url(../image/mountain_PNG18.png);}
+
+header{width: 100%; display: flex; display: flex; position: absolute; align-items: center; justify-content: space-between; background: gray; height: 5%; opacity: .7;}
+.logo{color: #000; font-size: 50px; text-decoration: none; font-weight: 900; display: block; position: absolute; top: 10px; left: 100px;}
+ul{display: flex; justify-content: flex-end; align-items: center; position: absolute; right: 30px; top: 10px; font-size: 16px; line-height: 50px;}
+ul li{list-style: none;width: 400px; height: 50px; text-align: center; line-height: 50px;}
+ul li:nth-of-type(n) a{width: 0; text-decoration: none; color: black; }
+ul li:nth-of-type(1){border: 1px solid black; border-radius: 20px 0 0 20px;}
+ul li:nth-of-type(1):hover{background: turquoise;}
+ul li:nth-of-type(1):hover a{color: white; border-bottom: 2px solid blue;}
+ul li:nth-of-type(2){border: 1px solid black; border-left: 0;}
+ul li:nth-of-type(2):hover{background: turquoise;}
+ul li:nth-of-type(2):hover a{color: white; border-bottom: 2px solid blue;}
+ul li:nth-of-type(3){border: 1px solid black; border-left: 0; border-right: 0;}
+ul li:nth-of-type(3):hover{background: turquoise;}
+ul li:nth-of-type(3):hover a{color: white; border-bottom: 2px solid blue;}
+ul li:nth-of-type(4){border: 1px solid black; border-radius: 0 20px 20px 0;}
+ul li:nth-of-type(4):hover{background: turquoise;}
+ul li:nth-of-type(4):hover a{color: white; border-bottom: 2px solid blue; }

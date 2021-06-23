@@ -1,0 +1,54 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh; background: #000040;}
+div{background: silver; width: 200px; height: 200px;  position: relative; display: flex; justify-content: center; align-items: center; transition: 0.5s; overflow: hidden; -webkit-box-reflect: below 3px linear-gradient(transparent,mediumspringgreen);}
+div:hover{ background: mediumspringgreen; color:white; box-shadow: 0 0 5px mediumspringgreen, 0 0 25px mediumspringgreen, 0 0 50px mediumspringgreen, 0 0 200px mediumspringgreen }
+div span{position: absolute; display: block; }
+div span:nth-of-type(1){width: 100%; height: 10px; background: turquoise; background: linear-gradient(90deg ,transparent,mediumspringgreen);  left: -100%; top:0%; animation: animate1 2s linear infinite;}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+div span:nth-of-type(3){width: 100%; height: 10px; background: turquoise; background: linear-gradient(270deg,transparent,mediumspringgreen); right: -100%; top: 97%; animation: animate3 2s linear infinite; animation-delay: 1s;}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+div span:nth-of-type(2){width: 10px; height: 100%; background: turquoise; background: linear-gradient(180deg,transparent,mediumspringgreen); right: 0; top: -100%; animation: animate2 2s linear infinite;animation-delay: 0.5s;}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+div span:nth-of-type(4){width: 10px; height: 100%; background: turquoise; background: linear-gradient(360deg,transparent,mediumspringgreen); left: 0; bottom: -100%; animation: animate4 2s linear infinite; animation-delay: 1.5s;}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+div h3{color: mediumspringgreen; overflow: hidden; letter-spacing: 2px; transition: 0.5s; border-right: 1px solid mediumspringgreen;}
+div:hover h3{color: white; border-right: 1px solid white;  animation: typing 5s steps(10) infinite;}
+@keyframes typing{
+    0%,90%,100%{
+        width: 0px;
+    }
+    30%,60%{
+        width: 107.03px;
+    }
+}
+div:active h3{color: blue;transition: 2s;}
